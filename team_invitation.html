@@ -1,0 +1,35 @@
+
+<!-- Begin Header -->
+<body style="background-color:#F6f6f6; margin: 0; padding: 0;">
+<p align="center" style="padding: .5em 0; margin: 0; background-color: #fff;">
+<img src="https://ecochallenge.org/wp-content/uploads/2016/06/EcoChallenge-Logo-with-Padding.png" style="height: 140px;"></p>
+<h1 id="eventCallout" style="background-color: #8cbe59; color: #fff; text-align: center; width: 100%; padding: 10px 0; margin: 0;"> Event.Name or Event.Org_name</h1>
+<!-- End Header -->
+
+<P>Hello,</p>
+
+<p>{{ user_message }}</p>
+
+<p>I am participating in the {{ event.name }}, and would like you to join my team!</p>
+
+<p>The Challenge, {{ event_url }}, runs from {{ start_date | date: "%A, %B %d" }} to {{ end_date | date: "%A, %B %d" }} and is a fun and easy way to make a difference for our community and the planet!</p>
+
+<p>Are you up for the Challenge? You can use this link to find out more and register to join my team:<br><br>
+
+{{ registration_url }}<br>
+{% if team.requires_password? %}<br>
+Team Password: {{ team.password }}<br>
+{% endif %}</p>
+
+<p>I hope you'll join me and the rest of the {{ event.name }} participants to prove that small actions add up to real change!</p>
+
+<p>We can do this!<br>
+{{ user.first_name }}</p>
+
+<!-- Begin Footer -->
+<P style="text-align: center; background-color: #F6F6F6; margin: 0; padding: 1em 0;"><img src="https://ecochallenge.org/wp-content/uploads/2017/06/Facebook_Circle_Blue.png" style="height: 30px; padding: 0 15px 0 0;"><img src="https://ecochallenge.org/wp-content/uploads/2017/06/Twitter_Circle_Blue.png" style="height: 30px; padding: 0 15px;"><img src="https://ecochallenge.org/wp-content/uploads/2017/06/ig-lightblue.png" style="height: 30px; padding: 0 0 0 15px;"></p>
+<P id="ecEmailFooter" style="padding: 15px; margin: 0; background-color: #357A99; color: #F6F6F6; text-align: center; font-size: 80%;"><a href="mailto:support@nwei.org" style="text-decoration: none; color: #F6F6F6;">SUPPORT</a>  |  <a href="https://www.nwei.org/privacy-policy/" target="_blank" style="text-decoration: none; color: #F6F6F6;">PRIVACY POLICY</a>  |  EMAIL SETTINGS</P>
+<P style="background-color:#Fff; color: #8cbe59; margin: 0; padding: .75em 0 0 0; text-align: center; font-size: 80%;">powered by</p>
+<p style="background-color:#FFF; margin: 0; padding: 0 0 .75em 0; text-align: center;"><a href="https://www.nwei.org" target="_blank"><img src="http://www.nwei.org/assets/nwei-1.png" style="height: 50px;"></a></P>
+</body>
+<!-- End Footer -->
